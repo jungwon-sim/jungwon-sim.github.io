@@ -1,0 +1,52 @@
+/*reset*/
+@charset "utf-8";
+
+/* 구글 웹폰트 */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+/* CSS 초기화 */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, code, del, em, img, ins, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tr, th, td, caption, tbody, tfoot, thead, article, aside, details, figcation, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+    margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; box-sizing: border-box;/*width 너비 안으로 padding+border*/
+} 
+body { font-family: 'Montserrat',sans-serif; line-height: 1; }
+article, aside, details, figcaption, figure, footer, header, menu, nav, section { display: block; }
+nav ul, li { list-style: none; box-sizing: border-box; }
+a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; text-decoration: none; }
+img { vertical-align: top; }
+hr { display: block; height: 2px; border: 0; margin: 0; padding: 0; }
+input, textarea { width: 100%; margin: 0; padding: 0; border: 0; border-bottom: 1px solid #757575; color: #3f51b5; font-family: 'Montserrat'; font-size: 12px; vertical-align: top; border-radius: 0; box-sizing: content-box; appearance:none; }
+
+/* 공통부분 */
+.clear::after, .container::after { content: ""; clear: both; display: block; }
+.blind {position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999em; overflow: hidden; }
+
+/*body*/
+#wrap {background: linear-gradient(-180deg, #300534, #8B858B)}
+#inv { font-family: 'Roboto'; 
+    font-size: 42px; 
+    color: #fff; 
+    opacity: 0.02; 
+    word-break: break-all; 
+    overflow: hidden;
+    background: linear-gradient(-45deg, #300534, #fff, #300534, #fff);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: transparent;
+    -webkit-background-clip: text;
+    overflow: hidden;
+  }
+
+    @keyframes gradient {
+        0% {
+        background-position: 0% 50%;
+        }
+        50% {
+        background-position: 100% 50%;
+        }
+        100% {
+        background-position: 0% 50%;
+        }
+    }
+/*header*/
+header h1 { width: 200px; margin: 30px auto; }
