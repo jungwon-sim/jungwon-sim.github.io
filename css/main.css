@@ -4,6 +4,13 @@
 /* 구글 웹폰트 */
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@font-face {
+    font-family: 'SangSangShinb7';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.1/SangSangShinb7.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* CSS 초기화 */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, code, del, em, img, ins, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tr, th, td, caption, tbody, tfoot, thead, article, aside, details, figcation, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
@@ -22,7 +29,7 @@ input, textarea { width: 100%; margin: 0; padding: 0; border: 0; border-bottom: 
 .blind {position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999em; overflow: hidden; }
 
 /*body*/
-#wrap {background: linear-gradient(-180deg, #300534, #8B858B)}
+#wrap {background: linear-gradient(-180deg, #300534, #8B858B);}
 #inv { font-family: 'Roboto'; 
     font-size: 42px; 
     color: #fff; 
@@ -48,5 +55,39 @@ input, textarea { width: 100%; margin: 0; padding: 0; border: 0; border-bottom: 
         background-position: 0% 50%;
         }
     }
+
+    /**/
+    #full {width:100%;height:100%;display:block}
+    #full .section{width:100%}
+
+
+    /*font*/
+    .font {font-family: 'SangSangShinb7'; font-size: 62px; text-align: center; color: #fff; font-weight: normal; }
+
+
 /*header*/
-header h1 { width: 200px; margin: 30px auto; }
+header h1 { width: 15%; position: absolute;  left: 50%; top: 5%; transform: translate(-50%,0); }
+
+/*emoji*/
+.emoji .fire img {width: 20%; 
+    position: absolute; left: 50%;  top: 50%; transform: translate(-50%,-50%); }
+.emoji .devil img {width: 10%; 
+    position: absolute; left: 50%;  top: 60%; transform: translate(-50%,-50%); }
+
+    /*title*/
+.title {position: absolute; left: 50%;  top: 85%; transform: translate(-50%,-50%); }
+
+
+/*enterance*/
+/*.one {width: 50%; position: absolute; left: 0;top: 0;}*/
+.one .name {margin-bottom: 10%;}
+.one input {background: none; border-bottom: 5px solid #fff; }
+.one input:focus {outline: none;}
+
+
+
+.fullpage_area{width:100%;height:100%;display:block}
+.fullpage_area .section{width:100%}
+ul.menu{width:100px;height:400px;position:fixed;right:0;top:20%}
+ul.menu li{width:100%;height:100px;border:1px solid #fff}
+ul.menu li a{width:100%;line-height:100px;text-align:center;color:#fff;display:block}

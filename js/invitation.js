@@ -1,11 +1,13 @@
 /*background*/
 $(document).ready(function(){
     
+
+
     function WindowSize(){
         var windowWD = $(window).width()
         var windowHT = $(window).height()
         $('#inv').width(windowWD);
-        $('#inv').height(windowHT);        
+        $('#inv').height(windowHT * 2);        
     };
 
     console.log,WindowSize();
@@ -19,4 +21,13 @@ $(document).ready(function(){
     $('#inv').text(BackTextRe); 
 
 
+ 
+    $(document).ready(function () {
+        $('.fullpage_area').fullpage({
+            sectionsColor : ['orange','red','green', 'darkviolet'],
+            menu : '.menu',
+            anchors : ['aa','bb','cc','dd']
+        });
+
+    })
 })

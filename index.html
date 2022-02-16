@@ -6,18 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/invitation.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>invitation</title>
 </head>
 <body>
   <div id="wrap">
     <div id="inv"></div>
-    <header>
-      <!--<h1><img src="images/SVG/제목.svg" alt=""></h1>-->
-    </header>
-    <section></section>
-    <section></section>
-    <main></main>
+    <div id="full">
+          <div class="section a">
+                <header>
+                  <h1><img src="images/SVG/제목.svg" alt=""></h1>
+                </header>
+                <div class="emoji">
+                  <h1 class="fire"><img src="images/fire_1f525.png" alt=""></h1>
+                  <h1 class="devil"><img src="images/smiling-face-with-horns_1f608.png" alt=""></h1>
+                </div>
+                <div class="title font">
+                      <h2>왈컴 투</h2>
+                      <h1>the HELL of Balance Game</h1>
+                </div>
+          </div>
+          <div class="section b font">
+            <div class="one">
+              <h2 class="name">이름을 입력하시던지요.</h2>
+              <input type="text" name="" id="">
+              <button>DONE</button>
+            </div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </div>
+      </div>
+      
+    <div class="fullpage_area">
+      <!--풀페이지요소에 반드시 클래스 명이 section이 있어야한다.-->
+      <div class="section"><h1>첫번째 페이지</h1></div>
+      <div class="section"><h1>두번째 페이지</h1></div>
+      <div class="section"><h1>세번째 페이지</h1></div>
+      <div class="section"><h1>네번째 페이지</h1></div>
+  </div>
+  <ul class="menu">
+      <!-- data-menuanchor를 포함하면 active class를 포함할 수 있다. 아이프레임으로 윈도우 정해서 클릭할때ㅑ 주소 안나오게 할 수 있음-->
+      <li data-menuanchor="aa"><a href="#aa">첫번째</a></li>
+      <li data-menuanchor="bb"><a href="#bb">두번째</a></li>
+      <li data-menuanchor="cc"><a href="#cc">세번째</a></li>
+      <li data-menuanchor="dd"><a href="#dd">네번째</a></li>
+  </ul>
   </div>
 </body>
 </html>
