@@ -29,7 +29,7 @@ input, textarea { width: 100%; margin: 0; padding: 0; border: 0; border-bottom: 
 .blind {position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999em; overflow: hidden; }
 
 /*body*/
-#wrap {background: linear-gradient(-180deg, #300534, #8B858B);}
+#wrap {background: linear-gradient(-180deg, #300534, #8B858B); max-width: 2300px;}
 #inv { font-family: 'Roboto'; 
     font-size: 42px; 
     color: #fff; 
@@ -57,12 +57,13 @@ input, textarea { width: 100%; margin: 0; padding: 0; border: 0; border-bottom: 
     }
 
     /**/
-    #full {width:100%;height:100%;display:block}
+    #full {position: absolute; left: 50%; top: 0; width: 100%; height: 100%; transform: translate(-50%,0); }
     #full .section{width:100%}
 
 
     /*font*/
-    .font {font-family: 'SangSangShinb7'; font-size: 62px; text-align: center; color: #fff; font-weight: normal; }
+    .font {font-family: 'SangSangShinb7'; font-size: 120px; text-align: center; color: #fff; font-weight: normal; }
+    .fonts {font-family: 'SangSangShinb7'; font-size: 62px; text-align: center; color: rgb(255, 255, 255); font-weight: normal; }
 
 
 /*header*/
@@ -72,22 +73,46 @@ header h1 { width: 15%; position: absolute;  left: 50%; top: 5%; transform: tran
 .emoji .fire img {width: 20%; 
     position: absolute; left: 50%;  top: 50%; transform: translate(-50%,-50%); }
 .emoji .devil img {width: 10%; 
-    position: absolute; left: 50%;  top: 60%; transform: translate(-50%,-50%); }
+    position: absolute; left: 50%;  top: 50%; transform: translate(-50%,-50%); }
 
     /*title*/
 .title {position: absolute; left: 50%;  top: 85%; transform: translate(-50%,-50%); }
 
 
 /*enterance*/
-/*.one {width: 50%; position: absolute; left: 0;top: 0;}*/
-.one .name {margin-bottom: 10%;}
-.one input {background: none; border-bottom: 5px solid #fff; }
+
+.one .name {padding-top: 20%; padding-bottom: 5%;}
+.one input {background: none; border-bottom: 5px solid #fff;width: 50%; }
 .one input:focus {outline: none;}
+.one button {display: block; margin: 5% auto; background-color: #300534; padding: 1%; border-radius: 50px;}
+
+.on {display: block;}
+.off {display: none;}
 
 
 
-.fullpage_area{width:100%;height:100%;display:block}
-.fullpage_area .section{width:100%}
-ul.menu{width:100px;height:400px;position:fixed;right:0;top:20%}
-ul.menu li{width:100%;height:100px;border:1px solid #fff}
-ul.menu li a{width:100%;line-height:100px;text-align:center;color:#fff;display:block}
+
+
+
+@media screen and (max-width: 1800px) {
+    .font {font-size: 82px;}
+    .fonts {font-size: 42px;}
+
+}
+
+@media screen and (max-width: 1260px) {
+    .font {font-size: 62px;}
+    .fonts {font-size: 32px;}
+
+}
+
+@media screen and (max-width: 740px ) {
+    .font {font-size: 32px;}
+    .fonts {font-size: 24px;}
+
+}
+
+@media screen and (max-width: 420px ) {
+    .font {font-size: 32px;}
+
+}
