@@ -41,5 +41,6 @@ $(document).ready(function(){
     })
 
     $('.place').html('장소</br>독산동 953 삼부르네상스 플러스 1020호</br>시간</br>언제오실텨?');
+    return false;
 
 })
